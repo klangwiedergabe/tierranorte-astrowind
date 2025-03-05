@@ -1,6 +1,6 @@
 site:
   name: Tierra2
-  site: 'https://astrowind.vercel.app'
+  site: 'https://tierra2.netlify.app'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Tierra2
+    template: '%s — Tierra2'
+  description: 'Buscando otros Galaxias'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Tierra2
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/hero-image.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
+    handle: '@tierra2'
+    site: '@tierra2'
     cardType: summary_large_image
 
 i18n:
