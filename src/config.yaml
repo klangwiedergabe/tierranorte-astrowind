@@ -1,6 +1,6 @@
 site:
-  name: Tierra2
-  site: 'https://tierra2.netlify.app'
+  name: 'Your Name'
+  site: 'https://your-domain.com'
   base: '/'
   trailingSlash: false
 
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: Tierra2
-    template: '%s — Tierra2'
-  description: 'Buscando otros Galaxias'
+    default: 'Your Name'
+    template: '%s — Your Name'
+  description: 'Personal website and portfolio'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: Tierra2
+    site_name: 'Your Name'
     images:
       - url: '~/assets/images/hero-image.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@tierra2'
-    site: '@tierra2'
+    handle: '@yourhandle'
+    site: '@yourhandle'
     cardType: summary_large_image
 
 i18n:
@@ -33,8 +33,7 @@ i18n:
 
 apps:
   blog:
-    isEnabled: true
-    postsPerPage: 6
+    isEnabled: false
 
     post:
       isEnabled: true
@@ -66,7 +65,7 @@ apps:
 analytics:
   vendors:
     googleAnalytics:
-      id: null # or "G-XXXXXXXXXX"
+      id: null
 
 ui:
   theme: 'system' # Values: "system" | "light" | "dark" | "light:only" | "dark:only"
