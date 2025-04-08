@@ -23,12 +23,11 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: '#' },
-    { ariaLabel: 'GitHub', icon: 'tabler:brand-github', href: '#' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://instagram.com/lexcosmo' },
+    { ariaLabel: 'X', icon: 'tabler:brand-x', href: 'https://twitter.com/humornegropo' },
+    { ariaLabel: 'YouTube', icon: 'tabler:brand-youtube', href: 'https://youtube.com/@humorgringopo' },
   ],
   footNote: `
-    © ${new Date().getFullYear()} Your Name. All rights reserved.
+    © ${new Date().getFullYear()} Alex Plaza. All rights reserved.
   `,
 };

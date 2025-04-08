@@ -1,5 +1,5 @@
 site:
-  name: 'Your Name'
+  name: 'Alex Plaza'
   site: 'https://your-domain.com'
   base: '/'
   trailingSlash: false
@@ -9,22 +9,22 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Your Name'
-    template: '%s — Your Name'
-  description: 'Personal website and portfolio'
+    default: 'Alex Plaza'
+    template: '%s — Alex Plaza'
+  description: 'Video Editor, App Designer, and Stand-up Comedian'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: 'Your Name'
+    site_name: 'Alex Plaza'
     images:
       - url: '~/assets/images/hero-image.png'
         width: 1200
         height: 628
     type: website
   twitter:
-    handle: '@yourhandle'
-    site: '@yourhandle'
+    handle: '@humornegropo'
+    site: '@humornegropo'
     cardType: summary_large_image
 
 i18n:
