@@ -1,6 +1,6 @@
 site:
-  name: 'Alex Plaza'
-  site: 'https://your-domain.com'
+  name: 'Tierra Norte'
+  site: 'https://tierranorte.com'
   base: '/'
   trailingSlash: false
 
@@ -9,26 +9,26 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Alex Plaza'
-    template: '%s — Alex Plaza'
-  description: 'Video Editor, App Designer, and Stand-up Comedian'
+    default: 'Tierra Norte - Remodelación de Casas'
+    template: '%s — Tierra Norte'
+  description: 'Empresa especializada en remodelación de casas, transformando espacios con calidad y diseño. Servicios de construcción, renovación y mejoras para el hogar.'
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: 'Alex Plaza'
+    site_name: 'Tierra Norte'
     images:
-      - url: '~/assets/images/me.webp'
+      - url: '~/assets/images/tierra-norte-hero.webp'
         width: 800
-        height: 800
+        height: 600
     type: website
   twitter:
-    handle: '@humornegropo'
-    site: '@humornegropo'
+    handle: '@tierranorte'
+    site: '@tierranorte'
     cardType: summary_large_image
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
