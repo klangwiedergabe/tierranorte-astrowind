@@ -3,6 +3,7 @@ import Layout from '~/layouts/PageLayout.astro';
 
 import Header from '~/components/widgets/Header.astro';
 import Hero from '~/components/widgets/Hero.astro';
+import LogoHero from '~/components/LogoHero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 import { getPermalink } from '~/utils/permalinks';
@@ -37,10 +38,13 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Tierra Norte"
-    tagline="Remodelación de Casas"
     actions={[{ variant: 'primary', text: 'Solicitar Cotización', href: '#contacto' }]}
   >
+    <Fragment slot="title">
+      <div class="flex justify-center">
+        <LogoHero class="max-w-[100px]" />
+      </div>
+    </Fragment>
     <Fragment slot="subtitle">
       Transformamos tu hogar con calidad y diseño excepcional. <br /> Especialistas en remodelación, renovación y mejoras para crear espacios que amas.
     </Fragment>
@@ -58,8 +62,6 @@ const metadata = {
         description: 'Cocinas modernas y funcionales que se adaptan a tu estilo de vida',
         callToAction: {
           target: '_self',
-          text: 'Ver más',
-          href: '#proyectos',
         },
       },
       {
@@ -68,8 +70,6 @@ const metadata = {
         description: 'Baños elegantes y prácticos con acabados de primera calidad',
         callToAction: {
           target: '_self',
-          text: 'Ver más',
-          href: '#proyectos',
         },
       },
       {
@@ -78,8 +78,6 @@ const metadata = {
         description: 'Expandimos tu espacio para crear más habitaciones y áreas útiles',
         callToAction: {
           target: '_self',
-          text: 'Ver más',
-          href: '#proyectos',
         },
       },
       {
@@ -88,8 +86,6 @@ const metadata = {
         description: 'Asesoría en decoración y distribución para maximizar tu espacio',
         callToAction: {
           target: '_self',
-          text: 'Ver más',
-          href: '#proyectos',
         },
       },
     ]}
@@ -105,18 +101,11 @@ const metadata = {
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nuestros Servicios</h2>
       <p>
-        En Tierra Norte, nos especializamos en transformar espacios ordinarios en extraordinarios. 
-        Nuestro equipo de expertos en construcción y diseño trabaja contigo para crear el hogar de tus sueños.
+        En Tierra Norte, nos especializamos en transformar espacios, nuestro equipo de expertos en construcción y diseño trabaja contigo para crear el hogar de tus sueños.
       </p>
       <br />
       <p>
-        Ofrecemos servicios integrales de remodelación, desde la planificación inicial hasta la entrega final, 
-        garantizando calidad en cada detalle y satisfacción total del cliente.
-      </p>
-      <br />
-      <p>
-        Con años de experiencia en el sector, hemos completado cientos de proyectos exitosos, 
-        transformando hogares y creando espacios que reflejan la personalidad y necesidades de cada familia.
+        Ofrecemos servicios integrales de remodelación, desde la planificación inicial hasta la entrega final.
       </p>
       <br />
       <p>Nuestros servicios incluyen:</p>
@@ -152,7 +141,6 @@ const metadata = {
             <p class="text-gray-600 dark:text-gray-300 mb-4">Cocina moderna con isla central, gabinetes personalizados y electrodomésticos de alta gama.</p>
             <div class="flex justify-between items-center">
               <span class="text-sm text-gray-500">Tiempo: 3 semanas</span>
-              <span class="text-sm text-gray-600 dark:text-gray-200 font-medium">Ver detalles</span>
             </div>
           </div>
         </div>
@@ -167,7 +155,6 @@ const metadata = {
             <p class="text-gray-600 dark:text-gray-300 mb-4">Baño elegante con ducha de lluvia, vanitorio doble y acabados de mármol.</p>
             <div class="flex justify-between items-center">
               <span class="text-sm text-gray-500">Tiempo: 2 semanas</span>
-              <span class="text-sm text-gray-600 dark:text-gray-200 font-medium">Ver detalles</span>
             </div>
           </div>
         </div>
@@ -182,7 +169,6 @@ const metadata = {
             <p class="text-gray-600 dark:text-gray-300 mb-4">Nueva sala de estar con ventanas panorámicas y terraza integrada.</p>
             <div class="flex justify-between items-center">
               <span class="text-sm text-gray-500">Tiempo: 4 semanas</span>
-              <span class="text-sm text-gray-600 dark:text-gray-200 font-medium">Ver detalles</span>
             </div>
           </div>
         </div>
@@ -195,7 +181,7 @@ const metadata = {
   <Content
     id="sobre-nosotros"
     title="Sobre Tierra Norte"
-    subtitle="Más de 15 años transformando hogares con pasión y profesionalismo"
+    subtitle="Transformamos hogares con pasión y profesionalismo"
     isReversed
     items={[
       {
@@ -213,16 +199,11 @@ const metadata = {
       src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
       alt: 'Equipo de construcción trabajando',
     }}
-    callToAction={{
-      target: '_self',
-      text: 'Conoce nuestro equipo',
-      icon: 'tabler:chevron-right',
-      href: '#contacto',
-    }}
+
   >
     <Fragment slot="content">
       <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Nuestra Historia <br /><span class="text-2xl">Construyendo sueños desde 2008</span>
+        Renovar para revitalizar<br /><span class="text-2xl">Ese es nuestro norte</span>
       </h3>
     </Fragment>
 
@@ -231,43 +212,8 @@ const metadata = {
     </Fragment>
   </Content>
 
-  <!-- Por qué elegirnos Widget **************** -->
 
-  <Content
-    isReversed
-    isAfterContent={true}
-    items={[
-      {
-        title: 'Experiencia:',
-        description:
-          'Más de 15 años en el sector de la construcción y remodelación, con un equipo altamente capacitado y certificado.',
-      },
-      {
-        title: 'Calidad:',
-        description: 'Utilizamos solo los mejores materiales y técnicas de construcción, garantizando durabilidad y belleza en cada proyecto.',
-      },
-    ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80',
-      alt: 'Trabajo de calidad en construcción',
-    }}
-    callToAction={{
-      target: '_self',
-      text: 'Solicitar presupuesto',
-      icon: 'tabler:chevron-right',
-      href: '#contacto',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        ¿Por qué elegirnos? <br /><span class="text-2xl">Calidad, experiencia y confianza</span>
-      </h3>
-    </Fragment>
-
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-gray-200 dark:bg-gray-800"></div>
-    </Fragment>
-  </Content>
+ 
 
   <!-- CallToAction Widget *********** -->
 
