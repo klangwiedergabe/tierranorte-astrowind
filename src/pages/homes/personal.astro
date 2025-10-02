@@ -6,7 +6,12 @@ import Hero from '~/components/widgets/Hero.astro';
 import LogoHero from '~/components/LogoHero.astro';
 import Content from '~/components/widgets/Content.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import BeforeAfterImage from '~/components/BeforeAfterImage.astro';
 import { getPermalink } from '~/utils/permalinks';
+import kitchenBeforeImage from '~/assets/images/before-kitchen.webp';
+import kitchenAfterImage from '~/assets/images/after-kitchen.webp';
+import hallBeforeImage from '~/assets/images/before-hall.webp';
+import hallAfterImage from '~/assets/images/after-hall.webp';
 
 const metadata = {
   title: 'Tierra Norte - Remodelación de Casas',
@@ -46,12 +51,21 @@ const metadata = {
     <Fragment slot="subtitle">
       Transformamos tu hogar con calidad y diseño excepcional. <br /> Especialistas en remodelación, renovación y mejoras para crear espacios que amas.
     </Fragment>
+    <Fragment slot="image">
+      <BeforeAfterImage
+        beforeImage={hallBeforeImage}
+        afterImage={hallAfterImage}
+        alt="Remodelación de pasillo"
+        class="mx-auto w-full max-w-4xl"
+      />
+    </Fragment>
   </Hero>
 
   <!-- Content Widget **************** -->
 
   <Content
     id="servicios"
+    isReversed
     columns={2}
     items={[
       {
@@ -87,15 +101,16 @@ const metadata = {
         },
       },
     ]}
-    image={{
-      src: 'https://tierra2.netlify.app/images/repair2.jpeg',
-      alt: 'Cocina remodelada moderna',
-      loading: 'eager',
-      width: 400,
-      height: 400,
-      class: "mx-auto w-full rounded-lg bg-gray-500 shadow-lg object-cover"
-    }}
   >
+    <Fragment slot="image">
+      <BeforeAfterImage
+        beforeImage={kitchenBeforeImage}
+        afterImage={kitchenAfterImage}
+        alt="Remodelación de cocina"
+        class="mx-auto w-full"
+      />
+    </Fragment>
+
     <Fragment slot="content">
       <h2 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Nuestros Servicios</h2>
       <p>
@@ -135,7 +150,7 @@ const metadata = {
       {
         variant: 'secondary',
         text: 'Llamar Ahora',
-        href: 'tel:+569',
+        href: 'tel:+56921919701',
         target: '_self',
         icon: 'tabler:phone',
       },
