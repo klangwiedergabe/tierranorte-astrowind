@@ -57,10 +57,10 @@ const {
             }
             {
               actions && (
-                <div class="max-w-xs sm:max-w-md m-auto md:m-0 flex flex-nowrap flex-col sm:flex-row md:justify-start gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
+                <div class="max-w-xs sm:max-w-md mx-auto md:mx-0 flex flex-nowrap flex-col sm:flex-row justify-center md:justify-start gap-4 intersect-once intersect-quarter motion-safe:md:opacity-0 motion-safe:md:intersect:animate-fade">
                   {Array.isArray(actions) ? (
                     actions.map((action) => (
-                      <div class="flex w-full sm:w-auto">
+                      <div class="flex w-full sm:w-auto justify-center md:justify-start">
                         <Button {...(action || {})} class="w-full sm:mb-0" />
                       </div>
                     ))
