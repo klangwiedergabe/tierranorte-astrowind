@@ -31,7 +31,7 @@ Para los propósitos de estos Términos y Condiciones:
 
 - **Servicio de Redes Sociales de Terceros** significa cualquier servicio o contenido (incluyendo datos, información, productos o servicios) proporcionado por un tercero que puede ser mostrado, incluido o puesto a disposición por el Servicio.
 
-- **Sitio Web** se refiere a Tierra Norte, accesible desde [https://tierranorte.com](https://tierranorte.com)
+- **Sitio Web** se refiere a Tierra Norte, accesible desde [https://tierranorte.cl](https://tierranorte.cl)
 
 - **Usted** significa el individuo que accede o utiliza el Servicio, o la empresa, u otra entidad legal en nombre de la cual dicho individuo accede o utiliza el Servicio, según corresponda.
 

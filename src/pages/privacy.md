@@ -28,7 +28,7 @@ Para los propósitos de esta Política de Privacidad:
 - **Servicio** se refiere al Sitio Web.
 - **Proveedor de Servicios** significa cualquier persona natural o jurídica que procesa los datos en nombre de la Empresa. Se refiere a empresas o individuos de terceros empleados por la Empresa para facilitar el Servicio, para proporcionar el Servicio en nombre de la Empresa, para realizar servicios relacionados con el Servicio o para ayudar a la Empresa a analizar cómo se utiliza el Servicio.
 - **Datos de Uso** se refiere a los datos recopilados automáticamente, ya sea generados por el uso del Servicio o desde la infraestructura del Servicio mismo (por ejemplo, la duración de una visita a la página).
-- **Sitio Web** se refiere a Tierra Norte, accesible desde [https://tierranorte.com](https://tierranorte.com)
+- **Sitio Web** se refiere a Tierra Norte, accesible desde [https://tierranorte.cl](https://tierranorte.cl)
 - **Usted** significa el individuo que accede o utiliza el Servicio, o la empresa, u otra entidad legal en nombre de la cual dicho individuo accede o utiliza el Servicio, según corresponda.
 
 ## Recopilación y Uso de sus Datos Personales

@@ -1,6 +1,6 @@
 site:
   name: 'Tierra Norte'
-  site: 'https://tierranorte.com'
+  site: 'https://tierranorte.cl'
   base: '/'
   trailingSlash: false
 
