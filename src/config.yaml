@@ -18,9 +18,9 @@ metadata:
   openGraph:
     site_name: 'Tierra Norte'
     images:
-      - url: '~/assets/images/tierra-norte-hero.webp'
-        width: 800
-        height: 600
+      - url: '/images/favicon.png'
+        width: 512
+        height: 512
     type: website
   twitter:
     handle: '@tierranorte'
