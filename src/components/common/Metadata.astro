@@ -26,7 +26,7 @@ const {
 
 const seoProps: AstroSeoProps = merge(
   {
-    title: 'Tierra 2',
+    title: 'Tierra Norte',
     titleTemplate: '%s',
     canonical: canonical,
     noindex: true,
@@ -36,7 +36,7 @@ const seoProps: AstroSeoProps = merge(
       url: canonical,
       site_name: SITE?.name,
       images: [],
-      locale: I18N?.language || 'en',
+      locale: I18N?.language || 'es',
       type: 'website',
     },
     twitter: {
@@ -44,11 +44,11 @@ const seoProps: AstroSeoProps = merge(
     },
   },
   {
-    title: 'Tierra 2, buscando otros galaxias!',
+    title: 'Tierra Norte - Remodelación de Casas',
     titleTemplate: METADATA?.title?.template,
     noindex: typeof METADATA?.robots?.index !== 'undefined' ? !METADATA.robots.index : undefined,
     nofollow: typeof METADATA?.robots?.follow !== 'undefined' ? !METADATA.robots.follow : undefined,
-    description: 'Huevito Sauez es Vambiro!',
+    description: 'Empresa especializada en remodelación de casas, transformando espacios con calidad y diseño. Servicios de construcción, renovación y mejoras para el hogar.',
     openGraph: METADATA?.openGraph,
     twitter: METADATA?.twitter,
   },
